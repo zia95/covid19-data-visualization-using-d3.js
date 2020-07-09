@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>D.V Project</title>
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/d3-geomap.css" />
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body style="background-color: #22282a; color: white;">
+
+    <h1> COVID19 DATA</h1>
+    <!-- svgs where our data will be displayed. -->
+    <div class="container">
+        
+        <div class="row">
+            <h3>Overview</h3>
+            <svg id="pie_tcases" width="300" height="300"></svg>
+            <svg id="pie_ncases" width="300" height="300"></svg>
+            <svg id="pie_ndeaths" width="300" height="300"></svg>
+        </div>
+        <div class="row">
+            
+            <div id="bar_tcases"><h3>Total Cases</h3></div>
+            
+            <div id="bar_tdeaths"><h3>Total Deaths</h3></div>
+        </div>
+        <div class="row">
+            <h3>World Map</h3>
+            <h6>Total cases throughtout. Click on a country to get specific details.</h6>
+            <svg id="map" width="800" height="600"></svg>
+        </div>
+        <div class="row" name="row_c_details">
+            <div id="detail"></div>
+        </div>
+        
+        <div class="row" name="row_c_details">
+            <div id="line_cases"></div>
+        </div>
+        <div class="row" name="row_c_details">
+            <div id="line_deaths"></div>
+        </div>
+        
+    </div>
+    
+    <!-- Load js dependencies files.... -->
+    <script src="./js/d3.v5.min.js"></script>
+    
+    
+    <!--
+        <script src="./js/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    -->
+    <!-- Load js our main js -->
+    <script src="./js/main.js"></script>
+
+
+</body>
+</html>
